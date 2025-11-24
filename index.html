@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Учебник: HTML/CSS вашего проекта</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button id="sidebarToggle" class="sidebar-toggle" aria-label="Меню">☰</button>
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand">Учебник</div>
+        <nav class="accordion" aria-label="Учебное меню">
+          <details open>
+            <summary>HTML теги</summary>
+            <ul class="nav-section">
+              <li><a href="tags.html">Обзор тегов</a></li>
+              <li><a href="tags.html#structure">Каркас страницы</a></li>
+              <li><a href="tags.html#text">Текст и заголовки</a></li>
+              <li><a href="tags.html#lists">Списки</a></li>
+              <li><a href="tags.html#media">Изображения</a></li>
+            </ul>
+          </details>
+          <details>
+            <summary>CSS стили</summary>
+            <ul class="nav-section">
+              <li><a href="css.html">Стили проекта</a></li>
+              <li><a href="css.html#effects">Простые эффекты</a></li>
+            </ul>
+          </details>
+          <details>
+            <summary>Примеры</summary>
+            <ul class="nav-section">
+              <li><a href="examples.html">Код страниц</a></li>
+              <li><a href="examples.html#index">index.html</a></li>
+              <li><a href="examples.html#about">about.html</a></li>
+              <li><a href="examples.html#austalia">austalia.html</a></li>
+            </ul>
+          </details>
+          <details>
+            <summary>Домашние задания</summary>
+            <ul id="homeworkMenu" class="nav-section">
+              <li><a href="homeworks.html">Список заданий</a></li>
+            </ul>
+          </details>
+          <details>
+            <summary>Работы (основная папка)</summary>
+            <ul class="nav-section">
+              <li><a href="project/index.html" target="_blank" rel="noopener">Главная сайта</a></li>
+              <li><a href="project/about.html" target="_blank" rel="noopener">О авторе</a></li>
+              <li><a href="project/austalia.html" target="_blank" rel="noopener">Австралия</a></li>
+              <li><a href="project/austria.html" target="_blank" rel="noopener">Австрия</a></li>
+            </ul>
+          </details>
+        </nav>
+      </aside>
+      <main class="main" id="mainContent">
+        <header class="page-header">
+          <h1>Учебник: HTML/CSS из вашего проекта</h1>
+          <p class="lead">Структура и стили исходных файлов + дополнительные пояснения.</p>
+        </header>
+        <section class="card">
+          <h2>Что внутри</h2>
+          <p class="muted">Этот мини‑сайт собран из вашего текущего проекта. Он показывает:</p>
+          <ul>
+            <li><b>Теги HTML</b>, которые реально есть в ваших файлах.</li>
+            <li><b>CSS‑стили</b> из файла <code>style.css</code> проекта.</li>
+            <li><b>Примеры</b>: исходный код + как он выглядит в браузере.</li>
+          </ul>
+          <p class="muted small">Подсказка: раздел «Примеры» — удобно копировать код и смотреть страницу вживую.</p>
+        </section>
+
+        <div class="grid cols-3" style="margin-top:20px">
+          <a class="card link-card" href="tags.html">
+            <h3>HTML‑теги</h3>
+            <p>Каркас, текст, списки, изображения.</p>
+            <span class="pill">Обзор</span>
+          </a>
+          <a class="card link-card" href="css.html">
+            <h3>CSS‑стили</h3>
+            <p>Базовые стили + эффекты.</p>
+            <span class="pill">Практика</span>
+          </a>
+          <a class="card link-card" href="examples.html">
+            <h3>Код и результат</h3>
+            <p>Исходники страниц проекта.</p>
+            <span class="pill">Исходный код</span>
+          </a>
+        </div>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

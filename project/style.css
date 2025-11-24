@@ -1,0 +1,39 @@
+body{
+    background: darkgray;
+
+    /* Основные стили для тела страницы */
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav{
+    background-color: antiquewhite;
+    padding: 20px;
+
+    text-align: center;
+    width: 500px;
+
+    margin: 20px auto;
+}
+
+nav a{
+    color: black;
+    margin-left: 20px;
+
+    /*  */
+    display: inline-block;
+    transition: 0.4s all ease;
+    /*  */
+}
+
+nav a:hover{
+    color: red;
+    /* Тень для текста */
+    box-shadow: 0px 10px 10px 0px black;
+    /* Поворот */
+    transform: rotate(360deg);
+    /* Увеличение текста */
+    transform: scale(1.1);
+    /* Помещается вверх */
+    transform: translateY(-5px);
+}

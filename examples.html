@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Код и результат</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button id="sidebarToggle" class="sidebar-toggle" aria-label="Меню">☰</button>
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand">Учебник</div>
+        <nav class="accordion" aria-label="Учебное меню">
+          <details>
+            <summary>HTML теги</summary>
+            <ul class="nav-section">
+              <li><a href="tags.html">Обзор тегов</a></li>
+            </ul>
+          </details>
+          <details>
+            <summary>CSS стили</summary>
+            <ul class="nav-section">
+              <li><a href="css.html">Стили проекта</a></li>
+            </ul>
+          </details>
+          <details open>
+            <summary>Примеры</summary>
+            <ul class="nav-section">
+              <li><a href="examples.html" class="active">Код страниц</a></li>
+              <li><a href="#index">index.html</a></li>
+              <li><a href="#about">about.html</a></li>
+              <li><a href="#austalia">austalia.html</a></li>
+            </ul>
+          </details>
+          <details>
+            <summary>Домашние задания</summary>
+            <ul id="homeworkMenu" class="nav-section">
+              <li><a href="homeworks.html">Список заданий</a></li>
+            </ul>
+          </details>
+          <details>
+            <summary>Работы</summary>
+            <ul class="nav-section">
+              <li><a href="project/index.html" target="_blank" rel="noopener">Главная сайта</a></li>
+              <li><a href="project/about.html" target="_blank" rel="noopener">О авторе</a></li>
+              <li><a href="project/austalia.html" target="_blank" rel="noopener">Австралия</a></li>
+              <li><a href="project/austria.html" target="_blank" rel="noopener">Австрия</a></li>
+            </ul>
+          </details>
+        </nav>
+      </aside>
+      <main class="main" id="mainContent">
+        <header class="page-header">
+          <h1>Код страниц</h1>
+          <p class="lead">Исходные HTML файлы с удобной навигацией и копированием.</p>
+        </header>
+      <div class="card">
+        <div class="tabs">
+          <button class="tab" data-tab="index">index.html</button>
+          <button class="tab" data-tab="about">about.html</button>
+          <button class="tab" data-tab="austalia">austalia.html</button>
+          <button class="tab" data-tab="austria">austria.html</button>
+          <button class="tab" data-tab="stylecss">style.css</button>
+        </div>
+
+        <section>
+            <div data-code="index">
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px">
+                <h3 style="margin:0">Код: index.html</h3>
+                <button class="btn ghost" data-copy="code-index">Скопировать</button>
+              </div>
+              <div class="code-wrap">
+                <a class="btn secondary view-btn" href="project/index.html" target="_blank" rel="noopener">Просмотреть</a>
+                <div class="code has-view"><pre><code id="code-index"><!-- 1. Обьяснить основы структуры -->
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;!-- 3. сделать meta, title --&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;title&gt;Страны мира&lt;/title&gt;
+    &lt;!-- 8. css  --&gt;
+    &lt;link rel="stylesheet" href="style.css" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+    &lt;nav&gt;
+      &lt;a href="index.html"&gt;Главная&lt;/a&gt;
+      &lt;a href="about.html"&gt;О авторе&lt;/a&gt;
+      &lt;a href=" austalia.html"&gt;Австралия&lt;/a&gt;
+    &lt;/nav&gt;
+
+    &lt;h1&gt;Страны мира&lt;/h1&gt;
+    &lt;p&gt;
+      Сколько всего стран в мире – вопрос междисциплинарный. Этот термин
+      используется в страноведении (раздел географии), политологии, истории,
+      международном праве. В зависимости от предмета науки выделяются критерии,
+      определяющие, является ли территория страной (или нет). Поэтому их число в
+      некоторых источниках достигает 300 – зависит от того, как считать.
+    &lt;/p&gt;
+    &lt;p&gt;
+      На нашем сайте вы сможете узнать информацию о некоторых наиболее
+      интересных странах
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;b
+        &gt;В географической модели «7 континентов» 197 независимых государств
+        распределяются следующим образом:&lt;/b
+      &gt;
+    &lt;/p&gt;
+    &lt;!-- 4. Списки --&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Европа 44;&lt;/li&gt;
+      &lt;li&gt;Азия ‑ 50;&lt;/li&gt;
+      &lt;li&gt;Северная Америка ‑ 23;&lt;/li&gt;
+      &lt;li&gt;Южная Америка ‑ 12;&lt;/li&gt;
+      &lt;li&gt;Африка ‑ 54;&lt;/li&gt;
+      &lt;li&gt;Австралия и Океания ‑ 14;&lt;/li&gt;
+      &lt;li&gt;Антарктида ‑ 0.&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;!-- 5. Картинки (img) --&gt;
+    &lt;img src="img/countries.jpg" height="348" width="700" /&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div>
+              </div>
+            </div>
+
+            <div data-code="about" hidden>
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px">
+                <h3 style="margin:0">Код: about.html</h3>
+                <button class="btn ghost" data-copy="code-about">Скопировать</button>
+              </div>
+              <div class="code-wrap">
+                <a class="btn secondary view-btn" href="project/about.html" target="_blank" rel="noopener">Просмотреть</a>
+                <div class="code has-view"><pre><code id="code-about">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;title&gt;О авторе&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;nav&gt;
+      &lt;a href="index.html"&gt;Главная&lt;/a&gt;
+      &lt;a href="about.html"&gt;О авторе&lt;/a&gt;
+      &lt;a href=" austalia.html"&gt;Австралия&lt;/a&gt;
+    &lt;/nav&gt;
+    
+    &lt;main&gt;
+      &lt;h1&gt;ФИО&lt;/h1&gt;
+      &lt;p&gt;&lt;b&gt;Информация&lt;/b&gt;&lt;/p&gt;
+      &lt;p&gt;Информация&lt;/p&gt;
+      &lt;p&gt;Информация&lt;/p&gt;
+      &lt;p&gt;Информация&lt;/p&gt;
+      &lt;img src="img/author_image.jpg" height="260" width="390" /&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Страна;&lt;/li&gt;
+        &lt;li&gt;Страна;&lt;/li&gt;
+        &lt;li&gt;Страна;&lt;/li&gt;
+        &lt;li&gt;Страна;&lt;/li&gt;
+        &lt;li&gt;Страна;&lt;/li&gt;
+        &lt;li&gt;Страна;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/main&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div>
+              </div>
+            </div>
+
+            <div data-code="austalia" hidden>
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px">
+                <h3 style="margin:0">Код: austalia.html</h3>
+                <button class="btn ghost" data-copy="code-austalia">Скопировать</button>
+              </div>
+              <div class="code-wrap">
+                <a class="btn secondary view-btn" href="project/austalia.html" target="_blank" rel="noopener">Просмотреть</a>
+                <div class="code has-view"><pre><code id="code-austalia">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;title&gt;Австралия&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+    &lt;nav&gt;
+        &lt;a href="index.html"&gt;Главная&lt;/a&gt;
+        &lt;a href="about.html"&gt;О авторе&lt;/a&gt;
+        &lt;a href="australia.html"&gt;Австралия&lt;/a&gt;
+    &lt;/nav&gt;
+    
+      &lt;br&gt;&lt;br&gt;&lt;br&gt;
+      &lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/1200px-Flag_of_Australia_%28converted%29.svg.png" height="80" width="160" /&gt;
+      &lt;h1&gt;Австралия&lt;/h1&gt;
+      &lt;p&gt;
+        Австралия — государство в Южном полушарии, занимающее одноимённый
+        материк, остров Тасмания и несколько других островов Индийского и Тихого
+        океанов; является шестым государством по площади в мире. К северу от
+        Австралийского Союза расположены Восточный Тимор, Индонезия и Папуа —
+        Новая Гвинея, к северо-востоку — Вануату, Новая Каледония и Соломоновы
+        Острова, к юго-востоку — Новая Зеландия. От главного острова Папуа —
+        Новой Гвинеи материковая часть Австралийского Союза отделена Торресовым
+        проливом минимальной шириной около 150 км, а расстояние от
+        австралийского острова Боигу до Папуа — Новой Гвинеи составляет около 5
+        километров. Население на 31 декабря 2018 года оценивалось в 25 180 200
+        человек, большинство из которых проживает в городах на восточном
+        побережье.
+      &lt;/p&gt;
+      &lt;p&gt;
+        Австралия является одной из развитых стран, будучи тринадцатой по
+        размеру экономикой в мире, и имеет шестое место в мире по ВВП в расчёте
+        на душу населения. Военные расходы Австралии являются двенадцатыми по
+        размеру в мире. Со вторым по величине индексом развития человеческого
+        потенциала Австралия занимает высокое место во многих сферах, таких как
+        качество жизни, здоровье, образование, экономическая свобода, защита
+        гражданских свобод и политических прав. Австралия является членом G20,
+        ОЭСР, ВТО, АТЭС, ООН, Содружества наций, АНЗЮСа
+      &lt;/p&gt;
+      &lt;h2&gt;Столица&lt;/h2&gt;
+      &lt;p&gt;
+        Канберра — столица Австралии, крупнейший внутренний город страны.
+        Население Канберры с городом-спутником Куинбиан как городской
+        агломерации Канберра — Куинбиан составляет 432 141 человек (2016). Город
+        является административным центром Австралийской столичной территории,
+        которая включает в себя также небольшую сельскохозяйственную зону и
+        национальный парк Намаджи. В 250 км к северо-востоку от Канберры
+        находится Сидней, а в 450 км к юго-западу — Мельбурн.
+      &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div>
+              </div>
+            </div>
+            <div data-code="austria" hidden>
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px">
+                <h3 style="margin:0">Код: austria.html</h3>
+                <button class="btn ghost" data-copy="code-austria">Скопировать</button>
+              </div>
+              <div class="code-wrap">
+                <a class="btn secondary view-btn" href="project/austria.html" target="_blank" rel="noopener">Просмотреть</a>
+                <div class="code has-view"><pre><code id="code-austria">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;title&gt;Австрия&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;nav&gt;
+      &lt;a href=&quot;index.html&quot;&gt;Главная&lt;/a&gt;
+      &lt;a href=&quot;about.html&quot;&gt;О авторе&lt;/a&gt;
+      &lt;a href=&quot; austalia.html&quot;&gt;Австралия&lt;/a&gt;
+      &lt;a href=&quot;austria.html&quot;&gt;Австрия&lt;/a&gt;
+    &lt;/nav&gt;
+    &lt;h1&gt;Австрия&lt;/h1&gt;
+    &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_Austria.svg/1280px-Flag_of_Austria.svg.png&quot; height=&quot;80&quot; width=&quot;160&quot; /&gt;
+    &lt;p&gt;Австрия — государство в Центральной Европе, граничит с восемью странами.&lt;/p&gt;
+    &lt;h2&gt;Столица — Вена&lt;/h2&gt;
+    &lt;p&gt;Вена — культурный центр: музеи, опера, историческая архитектура.&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Население ~ 9 млн&lt;/li&gt;
+      &lt;li&gt;Валюта: евро&lt;/li&gt;
+      &lt;li&gt;Официальный язык: немецкий&lt;/li&gt;
+      &lt;li&gt;Альпийский рельеф&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre></div>
+              </div>
+            </div>
+            <div data-code="stylecss" hidden>
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px">
+                <h3 style="margin:0">Код: style.css</h3>
+                <button class="btn ghost" data-copy="code-stylecss">Скопировать</button>
+              </div>
+              <div class="code-wrap">
+                <div class="code"><pre><code id="code-stylecss">body{\n    background: darkgray;\n\n    /* Основные стили для тела страницы */\n    width: 80%;\n    margin: 0 auto;\n}\n\nnav{\n    background-color: antiquewhite;\n    padding: 20px;\n\n    text-align: center;\n    width: 500px;\n\n    margin: 20px auto;\n}\n\nnav a{\n    color: black;\n    margin-left: 20px;\n\n    /*  */\n    display: inline-block;\n    transition: 0.4s all ease;\n    /*  */\n}\n\nnav a:hover{\n    color: red;\n    /* Тень для текста */\n    box-shadow: 0px 10px 10px 0px black;\n    /* Поворот */\n    transform: rotate(360deg);\n    /* Увеличение текста */\n    transform: scale(1.1);\n    /* Помещается вверх */\n    transform: translateY(-5px);\n}</code></pre></div>
+              </div>
+            </div>
+        </section>
+      </div>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

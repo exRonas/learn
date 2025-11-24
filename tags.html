@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML‑теги из проекта</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button id="sidebarToggle" class="sidebar-toggle" aria-label="Меню">☰</button>
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand">Учебник</div>
+        <nav class="accordion" aria-label="Учебное меню">
+          <details open>
+            <summary>HTML теги</summary>
+            <ul class="nav-section">
+              <li><a href="tags.html" class="active">Обзор тегов</a></li>
+              <li><a href="#structure">Каркас страницы</a></li>
+              <li><a href="#text">Текст и заголовки</a></li>
+              <li><a href="#lists">Списки</a></li>
+              <li><a href="#media">Изображения</a></li>
+            </ul>
+          </details>
+          <details>
+            <summary>CSS стили</summary>
+            <ul class="nav-section">
+              <li><a href="css.html">Стили проекта</a></li>
+              <li><a href="css.html#effects">Эффекты</a></li>
+            </ul>
+          </details>
+          <details>
+            <summary>Примеры</summary>
+            <ul class="nav-section">
+              <li><a href="examples.html">Код страниц</a></li>
+            </ul>
+          </details>
+          <details>
+            <summary>Домашние задания</summary>
+            <ul id="homeworkMenu" class="nav-section">
+              <li><a href="homeworks.html">Список заданий</a></li>
+            </ul>
+          </details>
+          <details>
+            <summary>Работы</summary>
+            <ul class="nav-section">
+              <li><a href="project/index.html" target="_blank" rel="noopener">Главная сайта</a></li>
+              <li><a href="project/about.html" target="_blank" rel="noopener">О авторе</a></li>
+              <li><a href="project/austalia.html" target="_blank" rel="noopener">Австралия</a></li>
+              <li><a href="project/austria.html" target="_blank" rel="noopener">Австрия</a></li>
+            </ul>
+          </details>
+        </nav>
+      </aside>
+      <main class="main" id="mainContent">
+        <header class="page-header">
+          <h1>HTML‑теги из вашего проекта</h1>
+          <p class="lead">Разбор основных элементов, встречающихся в исходных файлах.</p>
+        </header>
+      <div class="card" id="structure">
+        <h2>Структура страницы</h2>
+        <p class="muted">Теги, которые формируют «каркас» страницы.</p>
+        <div class="code"><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;title&gt;Заголовок вкладки&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    ... содержание страницы ...
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div>
+        <ul>
+          <li><b>&lt;html&gt;</b>: корневой элемент страницы.</li>
+          <li><b>&lt;head&gt;</b>: служебная информация о странице (кодировка, стили).</li>
+          <li><b>&lt;meta charset&gt;</b>: указывает кодировку текста (UTF‑8).</li>
+          <li><b>&lt;title&gt;</b>: заголовок во вкладке браузера.</li>
+          <li><b>&lt;link rel=&quot;stylesheet&quot;&gt;</b>: подключение CSS‑файла.</li>
+          <li><b>&lt;body&gt;</b>: видимое содержимое страницы.</li>
+        </ul>
+      </div>
+      <div class="card" id="navigation">
+        <h2>Навигация и ссылки</h2>
+        <div class="code"><pre><code>&lt;nav&gt;
+  &lt;a href=&quot;index.html&quot;&gt;Главная&lt;/a&gt;
+  &lt;a href=&quot;about.html&quot;&gt;О авторе&lt;/a&gt;
+  &lt;a href=&quot;austalia.html&quot;&gt;Австралия&lt;/a&gt;
+&lt;/nav&gt;
+</code></pre></div>
+        <ul>
+          <li><b>&lt;nav&gt;</b>: область навигации по сайту.</li>
+          <li><b>&lt;a&gt;</b>: ссылка на другую страницу (атрибут <code>href</code>).</li>
+        </ul>
+      </div>
+      <div class="card" id="text">
+        <h2>Заголовки и текст</h2>
+        <div class="code"><pre><code>&lt;h1&gt;Самый большой заголовок&lt;/h1&gt;
+&lt;h2&gt;Подзаголовок&lt;/h2&gt;
+&lt;p&gt;Обычный абзац текста.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Жирный текст&lt;/b&gt; внутри абзаца.&lt;/p&gt;
+&lt;p&gt;Перенос строки&lt;br&gt;на следующую строку.&lt;/p&gt;
+</code></pre></div>
+        <ul>
+          <li><b>&lt;h1&gt;…&lt;h6&gt;</b>: заголовки разных уровней.</li>
+          <li><b>&lt;p&gt;</b>: абзац текста.</li>
+          <li><b>&lt;b&gt;</b>: полужирное начертание.</li>
+          <li><b>&lt;br&gt;</b>: перенос строки.</li>
+        </ul>
+      </div>
+      <div class="card" id="lists">
+        <h2>Списки</h2>
+        <div class="code"><pre><code>&lt;ul&gt;
+  &lt;li&gt;Пункт 1&lt;/li&gt;
+  &lt;li&gt;Пункт 2&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre></div>
+        <ul>
+          <li><b>&lt;ul&gt;</b>: маркированный список.</li>
+          <li><b>&lt;li&gt;</b>: пункт списка.</li>
+        </ul>
+      </div>
+      <div class="card" id="media">
+        <h2>Изображения</h2>
+        <div class="code"><code>
+  &lt;img src=&quot;img/picture.jpg&quot; width=&quot;300&quot; height=&quot;200&quot;
+</code></div>
+        <ul>
+          <li><b>&lt;img&gt;</b>: выводит картинку (атрибуты <code>src</code>, <code>width</code>, <code>height</code>).</li>
+        </ul>
+      </div>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

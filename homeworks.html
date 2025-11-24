@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Домашние задания</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button id="sidebarToggle" class="sidebar-toggle" aria-label="Меню">☰</button>
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand">Учебник</div>
+        <nav class="accordion" aria-label="Учебное меню">
+          <details>
+            <summary>HTML теги</summary>
+            <ul class="nav-section">
+              <li><a href="tags.html">Обзор тегов</a></li>
+            </ul>
+          </details>
+          <details>
+            <summary>CSS стили</summary>
+            <ul class="nav-section">
+              <li><a href="css.html">Стили проекта</a></li>
+            </ul>
+          </details>
+          <details>
+            <summary>Примеры</summary>
+            <ul class="nav-section">
+              <li><a href="examples.html">Код страниц</a></li>
+            </ul>
+          </details>
+          <details open>
+            <summary>Домашние задания</summary>
+            <ul id="homeworkMenu" class="nav-section">
+              <li><a href="homeworks.html" class="active" aria-current="page">Список заданий</a></li>
+            </ul>
+          </details>
+        </nav>
+      </aside>
+      <main class="main" id="mainContent">
+        <header class="page-header">
+          <h1>Домашние задания</h1>
+          <p class="lead">Список формируется автоматически из папок <code>homeworkN</code>.</p>
+        </header>
+        <section class="card">
+          <h2>Текущие задания</h2>
+          <ul id="homeworkList"></ul>
+        </section>
+        <section class="card">
+          <h2>Как добавить новое</h2>
+          <ol>
+            <li>Создай папку вида <code>homework4</code>.</li>
+            <li>Внутри создай <code>index.html</code>.</li>
+            <li>Запусти скрипт генерации (см. README) чтобы обновить <code>homeworks.json</code>.</li>
+            <li>Открой любую страницу — меню обновится автоматически.</li>
+          </ol>
+        </section>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS‑стили из проекта</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button id="sidebarToggle" class="sidebar-toggle" aria-label="Меню">☰</button>
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand">Учебник</div>
+        <nav class="accordion" aria-label="Учебное меню">
+          <details>
+            <summary>HTML теги</summary>
+            <ul class="nav-section">
+              <li><a href="tags.html">Обзор тегов</a></li>
+            </ul>
+          </details>
+          <details open>
+            <summary>CSS стили</summary>
+            <ul class="nav-section">
+              <li><a href="css.html" class="active">Стили проекта</a></li>
+              <li><a href="#effects">Эффекты</a></li>
+            </ul>
+          </details>
+          <details>
+            <summary>Примеры</summary>
+            <ul class="nav-section">
+              <li><a href="examples.html">Код страниц</a></li>
+            </ul>
+          </details>
+          <details>
+            <summary>Домашние задания</summary>
+            <ul id="homeworkMenu" class="nav-section">
+              <li><a href="homeworks.html">Список заданий</a></li>
+            </ul>
+          </details>
+          <details>
+            <summary>Работы</summary>
+            <ul class="nav-section">
+              <li><a href="project/index.html" target="_blank" rel="noopener">Главная сайта</a></li>
+              <li><a href="project/about.html" target="_blank" rel="noopener">О авторе</a></li>
+              <li><a href="project/austalia.html" target="_blank" rel="noopener">Австралия</a></li>
+              <li><a href="project/austria.html" target="_blank" rel="noopener">Австрия</a></li>
+            </ul>
+          </details>
+        </nav>
+      </aside>
+      <main class="main" id="mainContent">
+        <header class="page-header">
+          <h1>CSS из вашего проекта + простые эффекты</h1>
+          <p class="lead">Разбор подключенных стилей и небольшая интерактивная демонстрация.</p>
+        </header>
+      <div class="card">
+        <h2>Проектные стили (файл style.css)</h2>
+        <div class="code"><pre><code>body{
+    background: darkgray;
+}
+
+nav{
+    background-color: antiquewhite;
+    padding: 20px;
+
+    text-align: center;
+    width: 500px;
+
+    margin: 20px auto;
+}
+
+nav a{
+    color: black;
+    margin-left: 20px;
+}
+</code></pre></div>
+        <p class="muted small">Это стили, которые уже подключены на ваших страницах.</p>
+      </div>
+      <div class="card" id="effects">
+        <h2>Ещё несколько простых и полезных стилей</h2>
+        <p class="muted">Ниже можно включать/выключать эффекты и смотреть, как меняется блок.</p>
+        <div class="demo-panel">
+          <label class="toggle"><input type="checkbox" data-toggle-class="demo-border"> Рамка (border)</label>
+          <label class="toggle"><input type="checkbox" data-toggle-class="demo-radius"> Скругление (border-radius)</label>
+          <label class="toggle"><input type="checkbox" data-toggle-class="demo-shadow"> Тень (box-shadow)</label>
+          <label class="toggle"><input type="checkbox" data-toggle-class="demo-transition"> Плавность (transition)</label>
+          <label class="toggle"><input type="checkbox" data-toggle-class="demo-hover"> При наведении — увеличение (hover + transform)</label>
+        </div>
+        <div id="liveBox" class="demo-box" style="margin-top:10px">БЛОК</div>
+
+        <h3>CSS для этих эффектов</h3>
+        <div class="code"><pre><code>/* Дополнительные стили из учебника */
+.demo-border{ border: 4px dashed #4f46e5; }
+.demo-radius{ border-radius: 16px; }
+.demo-shadow{ box-shadow: 0 8px 18px rgba(0,0,0,.18); }
+.demo-transition{ transition: transform .2s ease, box-shadow .2s ease; }
+.demo-hover:hover{ transform: scale(1.05); }
+</code></pre></div>
+      </div>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
