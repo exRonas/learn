@@ -1,0 +1,116 @@
+﻿/* Стиль "Космос" */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0b0d17; /* Темный фон космоса */
+  color: #e0e6ed; /* Светлый текст */
+  line-height: 1.6;
+}
+
+/* Навигация */
+nav {
+  background: #15192b;
+  border-bottom: 2px solid #2d3446;
+  padding: 15px 20px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+nav a {
+  text-decoration: none;
+  color: #4cc9f0; /* Яркий голубой */
+  font-weight: bold;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #f72585; /* Яркий розовый при наведении */
+  text-decoration: none;
+}
+
+/* Основной контейнер */
+.main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Карточки контента */
+.card {
+  background: #1b2135;
+  border: 1px solid #2d3446;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+h1, h2 {
+  color: #fff;
+  margin-top: 0;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+h1 {
+  border-bottom: 2px solid #4cc9f0;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+/* Изображения */
+.poster {
+  max-width: 100%;
+  width: 300px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 20px;
+  box-shadow: 0 0 15px rgba(76, 201, 240, 0.2); /* Легкое свечение */
+  border: 2px solid #2d3446;
+}
+
+/* Список фактов */
+.facts {
+  background: #15192b;
+  border: 1px solid #2d3446;
+  padding: 15px 20px;
+  border-radius: 10px;
+  list-style-type: none; /* Убираем стандартные точки */
+  padding-left: 20px;
+}
+
+.facts li {
+  margin: 10px 0;
+  padding-left: 10px;
+  border-left: 3px solid #f72585; /* Цветная полоска слева */
+}
+
+/* Бейджи (значки) */
+.badge {
+  display: inline-block;
+  background: #4361ee;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Подвал */
+.footer {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 14px;
+  color: #8b9bb4;
+  border-top: 1px solid #2d3446;
+  padding-top: 20px;
+}
+
+/* Выделение текста */
+.highlight {
+  color: #f72585;
+  font-weight: bold;
+}
