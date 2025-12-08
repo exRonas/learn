@@ -1,0 +1,150 @@
+﻿/* Стиль "Minecraft" */
+body {
+  margin: 0;
+  font-family: 'Verdana', sans-serif;
+  background-color: #e0e0e0; /* Светло-серый фон */
+  color: #333;
+  background-image: url('https://www.transparenttextures.com/patterns/cubes.png'); /* Текстура кубиков (если загрузится) */
+}
+
+/* Навигация */
+nav {
+  background: #3b3b3b; /* Темно-серый камень */
+  border-bottom: 4px solid #1d1d1d;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  margin: 0 15px;
+  font-size: 18px;
+  font-family: 'Courier New', monospace; /* Похоже на пиксельный шрифт */
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  padding: 5px 10px;
+}
+
+nav a:hover {
+  background-color: #727272;
+  border: 2px solid #fff;
+  color: #55ff55; /* Ярко-зеленый */
+}
+
+/* Основной контейнер */
+.main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Карточки контента */
+.card {
+  background: #fff;
+  border: 4px solid #5c3a21; /* Коричневая рамка (земля) */
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 8px 8px 0px rgba(0,0,0,0.2); /* Жесткая тень */
+}
+
+h1, h2 {
+  color: #2e7d32; /* Зеленый (трава) */
+  margin-top: 0;
+  font-family: 'Courier New', monospace;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+h1 {
+  border-bottom: 4px solid #2e7d32;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+/* Изображения */
+.poster {
+  max-width: 100%;
+  width: 300px;
+  display: block;
+  margin: 0 auto 20px;
+  border: 4px solid #333;
+  image-rendering: pixelated; /* Для пиксельной графики */
+}
+
+/* Список фактов */
+.facts {
+  background: #f1f8e9; /* Очень светло-зеленый */
+  border: 2px dashed #2e7d32;
+  padding: 15px 20px;
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.facts li {
+  margin: 10px 0;
+  padding-left: 10px;
+  border-left: 5px solid #5c3a21; /* Коричневая полоска */
+}
+
+/* Бейджи (значки) */
+.badge {
+  display: inline-block;
+  background: #ff9800; /* Оранжевый */
+  color: #fff;
+  padding: 3px 8px;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  border: 2px solid #e65100;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Подвал */
+.footer {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  font-family: 'Courier New', monospace;
+  background: #fff;
+  padding: 10px;
+  border: 2px solid #ccc;
+}
+
+/* Выделение текста */
+.highlight {
+  background-color: #a5d6a7;
+  padding: 0 4px;
+}
+
+/* Таблицы */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: 'Courier New', monospace;
+  border: 4px solid #5c3a21;
+}
+
+th, td {
+  border: 2px solid #8d6e63; /* Светло-коричневый */
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #5c3a21; /* Темно-коричневый */
+  color: #fff;
+  text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+  background-color: #f1f8e9; /* Чередование строк */
+}
+
+tr:hover {
+  background-color: #dcedc8; /* Подсветка при наведении */
+}
